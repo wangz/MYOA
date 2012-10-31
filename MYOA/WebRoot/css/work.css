@@ -1,0 +1,41 @@
+/* CSS Document */
+a:hover{
+	 color:#970000;
+	 text-decoration: 
+	 underline:none; 
+	 font-size:14px; 
+}
+a{ 
+	font-size: 14px; 
+	color: #C60001;
+	text-decoration: none 
+}
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+}
+table {
+	font-size: 14px;
+	background-image: url();
+}
+.advise {
+	font-family: "宋体";
+	font-size: 12px;
+	color: #CA0000;
+}
+.title {
+	font-size:24px; 
+	color: #C60001;
+	font-family: "华文行楷";
+}
+.column {
+	font-family: "华文行楷";
+	font-size: 20px;
+	color: #C60001;
+}
+.return {
+	font-family: "华文行楷";
+	font-size: 20px;
+	color:#6666FF;
+	cursor:hand;
+}

@@ -1,0 +1,90 @@
+ 首先备份你的$TomcatHome$/conf/server.xml文件（$TomcatHome$是指你的tomcat安装路径）,
+ 然后在<Host>节点下添加: 
+	
+	<Context path="/OA" reloadable="true" docBase="OA">
+		<Resource name="jdbc/OA" auth="Container" type="javax.sql.DataSource"/>
+		<ResourceParams name="jdbc/OA">
+			<parameter>
+				<name>factory</name>
+				<value>org.apache.commons.dbcp.BasicDataSourceFactory</value>
+			</parameter>
+			 <parameter>
+			 	        <name>driverClassName</name>
+				        <value>com.microsoft.jdbc.sqlserver.SQLServerDriver</value>
+				    </parameter>
+			<parameter>
+				<name>url</name>
+				<value>jdbc:microsoft:sqlserver://127.0.0.1:1433;DatabaseName=OA</value>
+			</parameter>
+			<parameter>
+				<name>username</name>
+				<value>sa</value>
+			</parameter>
+			<parameter>
+				<name>password</name>
+				<value></value>
+			</parameter>
+			<parameter>
+				<name>maxActive</name>
+				<value>1000</value>
+			</parameter>
+			<parameter>
+				<name>maxIdle</name>
+				<value>50</value>
+			</parameter>
+			<parameter>
+				<name>maxWait</name>
+				<value>50</value>
+			</parameter>
+		</ResourceParams>
+	</Context>
+
+	
+	
+	<Context path="/MYOA" reloadable="true" docBase="OA">
+		<Resource name="jdbc//MYOA" auth="Container" type="javax.sql.DataSource"/>
+		<ResourceParams name="jdbc//MYOA">
+			<parameter>
+				<name>factory</name>
+				<value>org.apache.commons.dbcp.BasicDataSourceFactory</value>
+			</parameter>
+			 <parameter>
+			 	        <name>driverClassName</name>
+				        <value>com.mysql.jdbc.Driver</value>
+				    </parameter>
+			<parameter>
+				<name>url</name>
+				<value>jdbc:mysql://10.1.81.221:3306/myoa?useUnicode=true&characterEncoding=utf8&autoReconnect=true</value>
+			</parameter>
+			<parameter>
+				<name>username</name>
+				<value>root</value>
+			</parameter>
+			<parameter>
+				<name>password</name>
+				<value>qwer1234</value>
+			</parameter>
+			<parameter>
+				<name>maxActive</name>
+				<value>1000</value>
+			</parameter>
+			<parameter>
+				<name>maxIdle</name>
+				<value>50</value>
+			</parameter>
+			<parameter>
+				<name>maxWait</name>
+				<value>50</value>
+			</parameter>
+		</ResourceParams>
+	</Context>
+	
+	在TOMCAT 6.0中，报错Cannot create JDBC driver of class '' for connect URL 'null'
+	配置修改为：
+	<Context docBase="MYOA" path="/MYOA" reloadable="true" source="org.eclipse.jst.jee.server:MYOA">
+		<Resource   name= "jdbc//MYOA"   auth= "Container"   type= "javax.sql.DataSource"
+                              maxActive= "100"   maxIdle= "30"   maxWait= "10000"
+                              username= "root"   password= "qwer1234"   driverClassName= "com.mysql.jdbc.Driver"
+                              url= "jdbc:mysql://10.1.81.221:3306/myoa?useUnicode=true&amp;characterEncoding=utf8&amp;autoReconnect=true"/>
+		</Context>
+		成功

@@ -1,0 +1,87 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>top</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script language=JavaScript>
+var timerID = null;
+var timerRunning = false;
+function stopclock (){
+	if(timerRunning)
+	clearTimeout(timerID);
+	timerRunning = false;
+}
+function startclock () {
+	stopclock();
+	showtime();
+}
+function showtime () {
+	var now = new Date();
+	var year =now.getYear();
+	var month =now.getMonth()+1;
+	var date =now.getDate();
+	var day =now.getDay();
+	if(day==0){
+	day="日";
+	}else if(day==1){
+	day="一";
+	}else if(day==2){
+	day="二";
+	}else if(day==3){
+	day="三";
+	}else if(day==4){
+	day="四";
+	}else if(day==5){
+	day="五";
+	}else{
+	day="六";
+	}
+	var hours = now.getHours();
+	var minutes = now.getMinutes();
+	var seconds = now.getSeconds()
+	var timeValue = year+"年"+month+"月"+date+"日 星期"+day+" ";
+	timeValue += ((hours >24) ? hours -24 :hours)
+	timeValue += ((minutes < 10) ? ":0" : ":") + minutes
+	timeValue += ((seconds < 10) ? ":0" : ":") + seconds
+	document.clock.time.value = timeValue;
+	timerID = setTimeout("showtime()",1000);
+	timerRunning = true;
+}
+</SCRIPT>
+<style type="text/css">
+<!--
+.style1 {
+	color: #0F2771;
+	font-weight: bold;
+}
+.style2 {color: #C60001}
+body {
+	margin-right: -200px;
+}
+-->
+</style>
+</head>
+<body onload=startclock()> 
+<table width="100%" height="112"  border="0" cellpadding="0" cellspacing="0">  
+  <tr bgcolor="#FFFFFF">
+    <td width="791" height="79" colspan="5" background="KCM/title.gif" bgcolor="#FFFFFF" >&nbsp;</td> 
+  </tr> 
+</table> 
+
+<table width="794" height="22" cellspacing="0" bgcolor="#FFFFFF"> 
+  <tr valign="bottom" class="top2"> 
+      
+      <td width="190" height="20" align="center" valign="middle"  class="style1">
+	   <form name="clock">
+	  <input name="time" style="font-size: 9pt;color:#0F2771;border:0" size="30">
+	  </form> </td> 
+    
+    <td width="328" valign="middle" >
+    <span class="style1"> 公告发布系统&nbsp;&nbsp;&nbsp;作者：王卓</span>
+    </td> 
+    <td width="125" align="center" valign="middle"><img src="image/icon_group.gif" width="15" height="15" /><a href="login/em.jsp" target="mainFrame" class="style1"><strong>员工登录</strong></a></td> 
+    <td width="141" align="center" valign="middle"><img src="image/icon_profile.gif" width="14" height="16" /><a href="login/admin.jsp" target="mainFrame" class="style1"><strong>管理员登录</strong></a></td> 
+  </tr>
+</body>
+</html>

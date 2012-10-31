@@ -1,0 +1,6 @@
+1先安装TOMCAT 和  ECLIPSE ，然后配置JAVA_HOME PATH CLASSPATH 
+2在ECLIPSE里配置TOMCAT路径
+3新建项目，为项目添加TOMCAT发布，
+4 启动
+
+servlet设置 类名可用大写，jsp名可用如em.del 路径em/del

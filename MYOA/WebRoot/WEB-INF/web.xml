@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  
+
+
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>login.em</servlet-name>
+    <servlet-class>com.login.Em</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>login.test</servlet-name>
+    <servlet-class>com.login.test</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>login.admin</servlet-name>
+    <servlet-class>com.login.Admin</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>em.view</servlet-name>
+    <servlet-class>com.em.View</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>em.add</servlet-name>
+    <servlet-class>com.em.Add</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>em.save</servlet-name>
+    <servlet-class>com.em.Save</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>affice.view</servlet-name>
+    <servlet-class>com.affice.View</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>affice.add</servlet-name>
+    <servlet-class>com.affice.Add</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>department.add</servlet-name>
+    <servlet-class>com.department.Add</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>department.view</servlet-name>
+    <servlet-class>com.department.View</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>department.del</servlet-name>
+    <servlet-class>com.department.Del</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>department.select</servlet-name>
+    <servlet-class>com.department.Select</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>department.change</servlet-name>
+    <servlet-class>com.department.Change</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>job.add</servlet-name>
+    <servlet-class>com.job.Add</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>job.view</servlet-name>
+    <servlet-class>com.job.View</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>job.del</servlet-name>
+    <servlet-class>com.job.Del</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>job.select</servlet-name>
+    <servlet-class>com.job.Select</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>job.change</servlet-name>
+    <servlet-class>com.job.Change</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>sys.set1</servlet-name>
+    <servlet-class>com.sys.Set1</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>sys.setlimit</servlet-name>
+    <servlet-class>com.sys.Setlimit</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>sys.view</servlet-name>
+    <servlet-class>com.sys.View</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>sys.set2</servlet-name>
+    <servlet-class>com.sys.Set2</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>affice.del</servlet-name>
+    <servlet-class>com.affice.Del</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>affice.judge</servlet-name>
+    <servlet-class>com.affice.Judge</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>affice.read</servlet-name>
+    <servlet-class>com.affice.Read</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>em.del</servlet-name>
+    <servlet-class>com.em.Del</servlet-class>
+  </servlet>
+ 
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>em.change_save</servlet-name>
+    <servlet-class>com.em.Change_save</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>em.select</servlet-name>
+    <servlet-class>com.em.Select</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>message.send</servlet-name>
+    <servlet-class>com.message.Send</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>message.view</servlet-name>
+    <servlet-class>com.message.View</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>message.del</servlet-name>
+    <servlet-class>com.message.Del</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>message.read</servlet-name>
+    <servlet-class>com.message.Read</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>affice.download</servlet-name>
+    <servlet-class>com.affice.Download</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>login.em</servlet-name>
+    <url-pattern>/login/em</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>login.test</servlet-name>
+    <url-pattern>/login/test</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>login.admin</servlet-name>
+    <url-pattern>/login/admin</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>em.view</servlet-name>
+    <url-pattern>/em/view</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>em.add</servlet-name>
+    <url-pattern>/em/add</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>em.save</servlet-name>
+    <url-pattern>/em/save</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>affice.view</servlet-name>
+    <url-pattern>/affice/view</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>affice.add</servlet-name>
+    <url-pattern>/affice/add</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>department.add</servlet-name>
+    <url-pattern>/department/add</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>department.view</servlet-name>
+    <url-pattern>/department/view</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>department.del</servlet-name>
+    <url-pattern>/department/del</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>department.select</servlet-name>
+    <url-pattern>/department/select</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>department.change</servlet-name>
+    <url-pattern>/department/change</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>job.add</servlet-name>
+    <url-pattern>/job/add</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>job.view</servlet-name>
+    <url-pattern>/job/view</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>job.del</servlet-name>
+    <url-pattern>/job/del</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>job.select</servlet-name>
+    <url-pattern>/job/select</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>job.change</servlet-name>
+    <url-pattern>/job/change</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>sys.set1</servlet-name>
+    <url-pattern>/sys/set1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>sys.setlimit</servlet-name>
+    <url-pattern>/sys/setlimit</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>sys.view</servlet-name>
+    <url-pattern>/sys/view</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>sys.set2</servlet-name>
+    <url-pattern>/sys/set2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>affice.del</servlet-name>
+    <url-pattern>/affice/del</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>affice.judge</servlet-name>
+    <url-pattern>/affice/judge</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>affice.read</servlet-name>
+    <url-pattern>/affice/read</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>em.del</servlet-name>
+    <url-pattern>/em/del</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>em.change_save</servlet-name>
+    <url-pattern>/em/change_save</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>em.select</servlet-name>
+    <url-pattern>/em/select</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>message.send</servlet-name>
+    <url-pattern>/message/send</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>message.view</servlet-name>
+    <url-pattern>/message/view</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>message.del</servlet-name>
+    <url-pattern>/message/del</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>message.read</servlet-name>
+    <url-pattern>/message/read</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>affice.download</servlet-name>
+    <url-pattern>/affice/download</url-pattern>
+  </servlet-mapping>
+  
+  
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

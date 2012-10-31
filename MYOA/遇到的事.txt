@@ -1,0 +1,73 @@
+
+
+Collection ret=new ArrayList();//获得一个容器类的对象
+用Collection 获取从session里的得到的集合，
+ Collection coll=(Collection)request.getAttribute("msg");
+用Collection对象的iterator()方法获得迭代器
+                   Iterator it=coll.iterator();
+		           while(it.hasNext()){
+			Affice dep=(Affice)it.next();}
+
+获取的时候用request而不是session,但也可以用session，看控制层里是怎么写的。。
+回原来地方：arent.location.href='../index.htm';
+
+数据库中设为标示，就可以自动增加
+
+flag.equals("view")    判断字符串相等的用这个equals!
+
+request.setAttribute和session.setAttribute("msg");有什么区别？
+
+按钮直接转到某一个页面onclick="javascript:document.location='../department/view?flag=view';"
+
+后退一步的用法：onclick="javascript:history.go(-1);"
+
+0普通用户，1 可发布信息
+
+   Object obj=session.getAttribute("id"); 
+		   id=Integer.parseInt(obj.toString());这个写法比较不错
+
+
+		request.setCharacterEncoding("gb2312");
+		response.setContentType("text/html; charset=gb2312");
+servlet里写这个不会出现乱码问题的。
+
+
+一般容易碰到的就是乱码问题和 数据传输问题，传输过程中容易出现问题，可以从控制台输出进行局部调试
+
+
+rs.next 的问题
+
+function del(){
+	if(confirm("确认要删除此公告么？")==1)
+	{
+	return true;
+	}
+    else
+    {
+    return false;
+    }
+}确认窗口用这个才对。。注意 调用时候用return del();
+
+我的时间显示不正确，调用这个就对了：format.setTimeZone(TimeZone.getTimeZone("GMT+8"));
+
+一般BODY的背景色可以用 bgcolor="#ECF1FF" 这个颜色还可以
+
+JSP中用<% 
+	if(dep.getSex()==0){
+		out.print("女");                //用这个来显示
+	}else{
+		out.print("男");
+	}
+%>可以控制显示，用out.print
+
+flag=(String)request.getParameter("flag");获取的时候要这么写
+
+jspSmart的使用方式，直接把.jar包拷到相关目录的lib目录下，然后引用它就可以用了
+enctype="mutipart/form-data"这个一定要加上才可以啊！！！！！！！！！！！
+然后就是调用的时候 获取 其他信息，要加上su.getrequest()  然后就是输入框必须有名字，不然无法获取
+
+调试技巧，可以把有问题的地方单独拿出来调试
+还需要解决的事情：
+1.添加修改删除用户信息部分
+2.最好 添加 时间控件,日期控件，如果是JS写的一般似乎是就被屏蔽了
+3.做一个查询浏览用户信息
